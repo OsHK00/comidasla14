@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/paginas/pedir.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div class="d-flex justify-content-center align-items-center ">
+        <form>
+            <div class="d-flex justify-content-end">
+                <a href="../index.html" class="btn-lg border-1 bt-atras bg-light"><i class="bi bi-arrow-left"></i></a>
+                
+
+            </div>
+            <div class="mb-3 nombre">
+                <label for="exampleInputEmail1" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Telefono</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Cedula</label>
+                <input type="number" class="form-control" id="exampleInputPassword1">
+                
+            </div>
+            <div class="mb-3">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Como recibiras tu orden?
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Domicilio</a></li>
+                        <li><a class="dropdown-item" href="#">En local</a></li>
+
+                    </ul>
+                </div>
+
+            </div>
+
+
+
+            <label for="exampleInputEmail1" class="form-label">Barrio</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Calle</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+
+
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Carrera</label>
+                <input type="number" class="form-control" id="exampleInputPassword1">
+                
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Descripcion</label>
+                <textarea rows="4" class="form-control" maxlength="100" placeholder="Escribe tu descripción aquí..."></textarea>
+                
+                <div id="emailHelp" class="form-text">No compartimos esta informacion con nadie</div>
+            </div>
+
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Recibir notificaciones de mi pedido</label>
+            </div>
+            <button type="button" class="btn btn-primary w-100 boton" data-bs-toggle="modal" data-bs-target="#exampleModal">Realizar pedido</button>
+    </div>
+    
+    
+    </form>
+    </div>
+</body>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class=" fs-5 text-center" id="exampleModalLabel">Gracias por elegirnos</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="text-center">Pedido realizado! Guarde este codigo para reclamaciones o conlultar
+            informacion de su pedido</p>
+
+            <h2 class="text-center">091</h2>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+</html>

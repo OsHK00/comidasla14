@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/componentes/boton_aganir.css">
+  <title>Comidas la 14</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div id="menu-top">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid px-0">
+          <h2 class="navbar-brand ms-3" href="#">Comidas la 14</h2>
+
+          <div class="d-flex ms-auto align-items-center me-3">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto me-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#Hamburgesas">Hamburguesas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Pizza">Pizza</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Salchipapa">Salchipapa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#perros">Perro caliente</a>
+              </li>
+              <button class="btn btn-outline-secondary ms-2" data-bs-toggle="modal" data-bs-target="#miModal">
+                <i class="bi bi-cart"></i>
+              </button>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div id="slider-component" class="row">
+      <div class="col-md-12">
+        <div id="carouselExampleCaptions" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/slider/slider-hamb.png" class="d-block w-100" alt="Hamburguesas">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Las Mejores Hamburguesas</h5>
+                <p>Disfruta de nuestras jugosas hamburguesas artesanales con ingredientes frescos.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/slider/slider-perro.png" class="d-block w-100" alt="Perros Calientes">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Perros Calientes Especiales</h5>
+                <p>Nuestros perros calientes con recetas únicas te sorprenderán.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/slider/slider-pizza.png" class="d-block w-100" alt="Pizzas">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Pizzas Recién Horneadas</h5>
+                <p>Hechas con masa fresca y los mejores ingredientes.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+      <h3 id="Hamburgesas"> Hamburguesas <br><br></h3>
+      <div class="col-md-12 d-flex justify-content-center flex-column FW">
+        <div class="row d-flex m-auto">
+          <div class="col-6">
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="img/bur-1.png" class="img-fluid rounded-start" alt="Hamburguesa Clásica">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Hamburguesa Clásica</h5>
+                    <p class="card-text">Carne 100% res, queso americano, lechuga, tomate, cebolla y nuestra salsa especial. Acompañada de papas fritas.</p>
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <p class="card-text"><small class="text-muted">$15.900</small></p>
+                            </div>
+                            <div class="col-md-6">
+                              <button id="bottone5">Añadir compra</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="img/bur-1.png" class="img-fluid rounded-start" alt="Hamburguesa BBQ">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Hamburguesa BBQ</h5>
+                    <p class="card-text">Doble carne, bacon crujiente, cebolla caramelizada, queso cheddar y salsa BBQ casera. Incluye papas a la francesa.</p>
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <p class="card-text"><small class="text-muted">$18.500</small></p>
+                            </div>
+                            <div class="col-md-6">
+                              <button id="bottone5">Añadir compra</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row d-flex m-auto">
+          <div class="col-6">
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="img/bur-1.png" class="img-fluid rounded-start" alt="Hamburguesa Vegana">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Hamburguesa Vegana</h5>
+                    <p class="card-text">Base de garbanzos y quinoa, lechuga, tomate, aguacate y mayonesa vegana. Acompañada de ensalada o papas.</p>
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <p class="card-text"><small class="text-muted">$16.200</small></p>
+                            </div>
+                            <div class="col-md-6">
+                              <button id="bottone5">Añadir compra</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="img/bur-1.png" class="img-fluid rounded-start" alt="Hamburguesa Picante">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Hamburguesa Picante</h5>
+                    <p class="card-text">Carne sazonada, jalapeños, queso pepper jack, salsa picante y mayonesa chipotle. Para los amantes del picante.</p>
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <p class="card-text"><small class="text-muted">$17.800</small></p>
+                            </div>
+                            <div class="col-md-6">
+                              <button id="bottone5">Añadir compra</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3 id="Pizza"> Pizza <br><br></h3>
+      <div class="col-md-12 d-flex justify-content-center flex-column FW">
+        <div class="row d-flex m-auto">
+          <div class="col-6">
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="img/bur-1.png" class="img-fluid rounded-start" alt="Pizza Margherita">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Pizza Margherita</h5>
+                    <p class="card-text">Clásica pizza italiana con salsa de tomate, mozzarella fresca, albahaca y un toque de aceite de oliva.</p>
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <p class="card-text"><small class="text-muted">$22.500</small></p>
+                            </div>
+                            <div class="col-md-6">
+                              <button id="bottone5">Añadir compra</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="img/bur-1.png" class="img-fluid rounded-start" alt="Pizza Pepperoni">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Pizza Pepperoni</h5>
+                    <p class="card-text">Salsa de tomate, doble pepperoni, queso mozzarella y orégano. La favorita de todos.</p>
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <p class="card-text"><small class="text-muted">$24.900</small></p>
+                            </div>
+                            <div class="col-md-6">
+                              <button id="bottone5">Añadir compra</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row d-flex m-auto">
+          <div class="col-6">
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="img/bur-1.png" class="img-fluid rounded-start" alt="Pizza Hawaiana">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Pizza Hawaiana</h5>
+                    <p class="card-text">Jamón, piña, queso mozzarella y salsa de tomate. La combinación perfecta de dulce y salado.</p>
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <p class="card-text"><small class="text-muted">$23.700</small></p>
+                            </div>
+                            <div class="col-md-6">
+                              <button id="bottone5">Añadir compra</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="img/bur-1.png" class="img-fluid rounded-start" alt="Pizza Vegetariana">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Pizza Vegetariana</h5>
+                    <p class="card-text">Champiñones, pimientos, cebolla, aceitunas y espinacas con queso mozzarella y salsa de tomate.</p>
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <p class="card-text"><small class="text-muted">$21.900</small></p>
+                            </div>
+                            <div class="col-md-6">
+                              <button id="bottone5">Añadir compra</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3 id="Salchipapa"> Salchipapa <br><br></h3>
+      <div class="col-md-12 d-flex justify-content-center flex-column FW">
+        <div class="row d-flex m-auto">
+          <div class="col-6">
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="img/bur-1.png" class="img-fluid rounded-start" alt="Salchipapa Clásica">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Salchipapa Clásica</h5>
+                    <p class="card-text">Papas a la francesa, salchicha, salsa rosada, mostaza, ketchup y mayonesa. Tradición en cada bocado.</p>
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <p class="card-text"><small class="text-muted">$12.500</small></p>
+                            </div>
+                            <div class="col-md-6">
+                              <button id="bottone5">Añadir compra</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="img/bur-1.png" class="img-fluid rounded-start" alt="Salchipapa Mixta">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Salchipapa Mixta</h5>
+                    <p class="card-text">Papas, salchicha, pollo desmechado, carne molida, huevo de codorniz y todas las salsas. ¡Una explosión de sabores!</p>
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <p class="card-text"><small class="text-muted">$15.900</small></p>
+                            </div>
+                            <div class="col-md-6">
+                              <button id="bottone5">Añadir compra</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row d-flex m-auto">
+          <div class="col-6">
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="img/bur-1.png" class="img-fluid rounded-start" alt="Salchipapa BBQ">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Salchipapa BBQ</h5>
+                    <p class="card-text">Papas crocantes, salchicha, tocino, cebolla caramelizada y nuestra deliciosa salsa BBQ casera.</p>
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <p class="card-text"><small class="text-muted">$14.200</small></p>
+                            </div>
+                            <div class="col-md-6">
+                              <button id="bottone5">Añadir compra</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="img/bur-1.png" class="img-fluid rounded-start" alt="Salchipapa Super">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Salchipapa Super</h5>
+                    <p class="card-text">Doble porción de papas, salchicha, chorizo, maíz, queso rallado, huevo de codorniz y todas las salsas.</p>
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <p class="card-text"><small class="text-muted">$17.500</small></p>
+                            </div>
+                            <div class="col-md-6">
+                              <button id="bottone5">Añadir compra</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <h3 id="perros">Perros Calientes<br><br></h3>
+      <div class="col-md-12 d-flex justify-content-center flex-column FW">
+        <div class="row d-flex m-auto">
+          <div class="col-6">
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="img/perro.webp" class="img-fluid rounded-start" alt="Perro Americano">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Perro Americano</h5>
+                    <p class="card-text">Salchicha americana, cebolla caramelizada, mostaza, ketchup, mayonesa y papas crocantes.</p>
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <p class="card-text"><small class="text-muted">$10.900</small></p>
+                            </div>
+                            <div class="col-md-6">
+                              <button id="bottone5">Añadir compra</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="img/perro.webp" class="img-fluid rounded-start" alt="Perro Mexicano">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Perro Mexicano</h5>
+                    <p class="card-text">Salchicha, guacamole, pico de gallo, jalapeños, nachos y salsa picante. ¡Para los valientes!</p>
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <p class="card-text"><small class="text-muted">$12.700</small></p>
+                            </div>
+                            <div class="col-md-6">
+                              <button id="bottone5">Añadir compra</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row d-flex m-auto">
+          <div class="col-6">
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="img/perro.webp" class="img-fluid rounded-start" alt="Perro Ranchero">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Perro Ranchero</h5>
+                    <p class="card-text">Salchicha, huevo revuelto, tocino, queso rallado y salsa ranchera. Ideal para el desayuno.</p>
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <p class="card-text"><small class="text-muted">$13.500</small></p>
+                            </div>
+                            <div class="col-md-6">
+                              <button id="bottone5">Añadir compra</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="img/perro.webp" class="img-fluid rounded-start" alt="Perro Super">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Perro Super</h5>
+                    <p class="card-text">Doble salchicha, pollo desmechado, carne molida, huevo de codorniz, queso y todas las salsas.</p>
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <p class="card-text"><small class="text-muted">$15.900</small></p>
+                            </div>
+                            <div class="col-md-6">
+                              <button id="bottone5">Añadir compra</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <footer class="bg-dark text-white mt-5">
+      <div class="container py-4">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>Comidas la 14</h5>
+            <p>La mejor comida rápida con ingredientes frescos y de calidad. Servicio rápido y sabores inigualables.</p>
+          </div>
+          <div class="col-md-4">
+            <h5>Horario de atención</h5>
+            <p>Lunes a Viernes: 5pm - 10pm</p>
+            <p>Sábados y Domingos: 5pm - 12pm</p>
+          </div>
+          <div class="col-md-4">
+            <h5>Contacto</h5>
+            <p><i class="bi bi-geo-alt"></i> Calle 14 #23-45, Ciudad</p>
+            <p><i class="bi bi-telephone"></i> +57</p>
+            <p><i class="bi bi-envelope"></i> comidasla14Sahagun@gmail.com</p>
+            <div class="social-icons">
+              <a href="#" class="text-white me-2"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="text-white me-2"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="text-white me-2"><i class="bi bi-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-3">
+          <p>&copy; 2025 Comidas la 14. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <button id="b-fotante" class="btn btn-outline-secondary me-2 position-fixed bottom-0 end-0 m-3"
+    data-bs-toggle="modal" data-bs-target="#miModal">
+    <i class="bi bi-cart"></i>
+  </button>
+
+  <div class="modal" id="miModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Carrito de Compras</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Aquí aparecerán los productos que agregues al carrito.</p>
+          <div class="list-group">
+            <div class="list-group-item d-flex justify-content-between align-items-center">
+              Hamburguesa Clásica
+              <span class="badge bg-primary rounded-pill">1</span>
+            </div>
+            <div class="list-group-item d-flex justify-content-between align-items-center">
+              Pizza Pepperoni
+              <span class="badge bg-primary rounded-pill">1</span>
+            </div>
+          </div>
+          <div class="mt-3">
+            <h6>Total: $40.800</h6>
+          </div>
+        </div>
+        <div class="modal-footer d-flex justify-content-between">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <a href="paginas/pedir.html" target="_blank" class="btn btn-primary">Realizar Pedido</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

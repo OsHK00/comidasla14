@@ -1,0 +1,54 @@
+/* From Uiverse.io by TCdesign-dev - Modificado */
+
+#bottone5 {
+  align-items: center;
+  background-color: #285151;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #B6DD6C;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui, -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  min-height: 3rem;
+  padding: calc(.675rem - 1px) calc(1rem - 1px);
+  text-decoration: none;
+  transition: all 250ms ease;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+#bottone5:hover,
+#bottone5:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 6px 16px;
+  color: white;
+  background-color: #347e7e;
+  transform: translateY(-2px);
+}
+
+#bottone5:active {
+  animation: clickBounce 0.25s ease;
+  background-color: #F0F0F1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+/* Animación al hacer clic */
+@keyframes clickBounce {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(0.95); }
+  75%  { transform: scale(1.03); }
+  100% { transform: scale(1); }
+}
